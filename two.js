@@ -50,4 +50,3 @@ function changeColor(changeColor){
 function backColor(backColor){
     document.body.style.backgroundColor = backColor;
 }
-console.log("Hello World");
