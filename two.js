@@ -1,29 +1,17 @@
-// var str = "how can mirrors be real if our eyes aren't real";
-// console.log(caps(str));
-
-// function caps(str){
-//     var firstChar = str.slice(0,1);
-//     var restLetter = str.slice(1, str.length);
-//     restLetter = restLetter.toLowerCase;
-//     return restLetter;
-// }
-
-// function capitalizeFirstLetter(string) {
-//     var firstChar = string.slice(0,1);
-//     var capsChar = firstChar.toUpperCase();
-//     var restChar = string.slice(1, string.length);
-//     restChar = restChar.toLowerCase();
-//     var complete = capsChar + restChar;
-//     return complete;
-// }
-
-// var name = prompt("Enter your name");
-// var result = capitalizeFirstLetter(name);
-// console.log(result);
+function capitalizeFirstLetter(string) {
+    var firstChar = string.slice(0,1);
+    var capsChar = firstChar.toUpperCase();
+    var restChar = string.substr(1);
+    restChar = restChar.toLowerCase();
+    var complete = capsChar + restChar;
+    return complete;
+}
 
 function hey(){
     var yourName = document.getElementById("yourName").value;
     var partnerName = document.getElementById("partnerName").value;
+    yourName = capitalizeFirstLetter(yourName);
+    partnerName = capitalizeFirstLetter(partnerName);
     var number = Math.random();
     number = number * 100;
     number = Math.floor(number) + 1;
