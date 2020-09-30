@@ -1,11 +1,24 @@
-function capitalizeFirstLetter(string) {
+/* function capitalizeFirstLetter(string) {
     var firstChar = string.slice(0,1);
     var capsChar = firstChar.toUpperCase();
     var restChar = string.substr(1);
     restChar = restChar.toLowerCase();
     var complete = capsChar + restChar;
     return complete;
+} */
+
+
+// Creating new and shorter capitalization of First Letter 
+// and fixing the orginal code that when you type paul jolou in the box 
+// it returns this "Paul jolou" without capitalizating the first letter of jolou 
+function capitalizeFirstLetter(string) {
+    let arr = string.split(' ');
+    let cap = arr.map(i => {
+       return i[0].toUpperCase() + i.slice(1)
+    });
+    return cap.join(' ');
 }
+
 
 function hey(){
     var yourName = document.getElementById("yourName").value;
