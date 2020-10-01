@@ -32,9 +32,13 @@ function hey(){
         document.querySelector("h1").innerText = lastStatement;
     }
 }
-function changeColor(changeColor){
-    document.body.style.backgroundColor = changeColor;
+function nightMode(){
+    var color = "white";
+    document.getElementsByTagName("body")[0].style.backgroundColor = "rgb(70, 69, 73)";
+    document.querySelector("h1").style.color = color;
+    document.getElementsByClassName("two")[0].style.borderColor = color;
 }
-function backColor(backColor){
-    document.body.style.backgroundColor = backColor;
+// rgb(70, 69, 73)
+function reload(){
+    location.reload(true);
 }
