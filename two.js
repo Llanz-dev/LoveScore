@@ -1,10 +1,18 @@
+// function capitalizeFirstLetter(string) {
+//     var firstChar = string.slice(0,1);
+//     var capsChar = firstChar.toUpperCase();
+//     var restChar = string.substr(1);
+//     restChar = restChar.toLowerCase();
+//     var complete = capsChar + restChar;
+//     return complete;
+// }
+
 function capitalizeFirstLetter(string) {
-    var firstChar = string.slice(0,1);
-    var capsChar = firstChar.toUpperCase();
-    var restChar = string.substr(1);
-    restChar = restChar.toLowerCase();
-    var complete = capsChar + restChar;
-    return complete;
+    let arr = string.split(' ');
+    let cap = arr.map(i => {
+       return i[0].toUpperCase() + i.slice(1)
+    });
+    return cap.join(' ');
 }
 
 function hey(){
