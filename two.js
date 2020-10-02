@@ -10,7 +10,7 @@
 function capitalizeFirstLetter(string) {
     let arr = string.split(' ');
     let cap = arr.map(i => {
-       return i[0].toUpperCase() + i.slice(1)
+       return i[0].toUpperCase() + i.slice(1).toLowerCase()
     });
     return cap.join(' ');
 }
