@@ -7,7 +7,7 @@ function capitalizeFirstLetter(string) {
     return complete;
 }
 
-function hey(){
+function love_score(){
     var yourName = document.getElementById("yourName").value;
     var partnerName = document.getElementById("partnerName").value;
     yourName = capitalizeFirstLetter(yourName);
@@ -15,11 +15,11 @@ function hey(){
     var number = Math.random();
     number = number * 100;
     number = Math.floor(number) + 1;
-    var firstStatement = "The love score of between  " + yourName + " and " + partnerName + " is " + number + "%. Not good";
-    var secondStatement = "The love score of between  " + yourName + " and " + partnerName + " is " + number + "%. Good";
-    var thirdStatement = "The love score of between  " + yourName + " and " + partnerName + " is " + number + "%. Vey good";
-    var fourthStatement = "The love score of between  " + yourName + " and " + partnerName + " is " + number + "%. Excellent";
-    var lastStatement = "The love score of between  " + yourName + " and " + partnerName + " is " + number + "%. Perfect";
+    var firstStatement = "The love score between " + yourName + " and " + partnerName + " is " + number + "%. Not good";
+    var secondStatement = "The love score between " + yourName + " and " + partnerName + " is " + number + "%. Good";
+    var thirdStatement = "The love score between " + yourName + " and " + partnerName + " is " + number + "%. Vey good";
+    var fourthStatement = "The love score between " + yourName + " and " + partnerName + " is " + number + "%. Excellent";
+    var lastStatement = "The love score between " + yourName + " and " + partnerName + " is " + number + "%. Perfect";
     if(number >= 0 && number <= 30){
         document.querySelector("h1").innerText = firstStatement;
     } else if (number >= 31 && number <= 60){
@@ -31,10 +31,6 @@ function hey(){
     } else {
         document.querySelector("h1").innerText = lastStatement;
     }
-}
-function changeColor(changeColor){
-    document.body.style.backgroundColor = changeColor;
-}
-function backColor(backColor){
-    document.body.style.backgroundColor = backColor;
+    document.getElementById("yourName").value = ''
+    document.getElementById("partnerName").value = ''
 }

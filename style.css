@@ -1,5 +1,5 @@
 body{
-    background-color: rgb(255, 254, 209);
+    background-color: rgb(255, 198, 196);
     font-family: 'Epilogue', sans-serif;
 }
 h1{
@@ -33,7 +33,7 @@ input[type=text]{
     width: 50%;
 }
 input[type=text]:hover, input[type=button]:hover{
-    background-color:  rgb(255, 254, 209);
+    background-color:  rgb(255, 238, 238);
 
 }
 input[type=button]{
