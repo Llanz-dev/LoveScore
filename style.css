@@ -32,10 +32,13 @@ input[type=text], input[type=button]{
 input[type=text]{
     width: 50%;
 }
+<<<<<<< HEAD:style.css
 input[type=text]:hover, input[type=button]:hover{
     background-color:  rgb(255, 238, 238);
 
 }
+=======
+>>>>>>> e141a83842511ff383abf6a26f7087e3c66414dc:two.css
 input[type=button]{
     width: 51.2%;
     transition: .10s;

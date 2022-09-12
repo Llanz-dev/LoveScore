@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # loveScore
 
 ## Description
@@ -26,3 +27,8 @@ Just clone this and open the **index.html**.
 ![followers](https://img.shields.io/github/followers/Llanz-dev?style=social)
 ![stars](https://img.shields.io/github/stars/Llanz-dev?style=social)
 ![forks](https://img.shields.io/github/forks/Llanz-dev/loveScore?style=social)
+=======
+From 1 to 100 it will randomly create a percentage score after you put your name and your partner name on both field
+
+Built with HTML, CSS and JS
+>>>>>>> e141a83842511ff383abf6a26f7087e3c66414dc
