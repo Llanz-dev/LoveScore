@@ -6,6 +6,11 @@ loveScore is just a random number generator and shows the percentage of score to
 - loveScore can generate a random number from 0 to 100.
 - I only use HTML, CSS and JavaScript to build this fun game.
 
+## Built With
+- HTML
+- CSS
+- JavaScript
+
 ## How to Run the Project
 Just clone this and open the **index.html**.
 
